@@ -21,7 +21,7 @@ html, body {
 nav ul {
     position: fixed;
     width: 100%;
-    max-width: 80%;
+    max-width: 93%;
     display: flex;
     justify-content: end;
     list-style: none;
@@ -68,6 +68,13 @@ h2 {
     font-size: 1.2em;
     font-family: sans-serif;
     color: #394867;
+}
+
+.TituloProyectos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .flecha-cont {
