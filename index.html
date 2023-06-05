@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Ruiz</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcun icon" href="habilidades-img/9.png" />
+    <link rel="shortcun icon" href="habilidades-img/Logo.png" />
     
 </head>
 <body>
@@ -15,7 +15,8 @@
         <ul class="ul-nav">
             <a href="#proyectos"><li id="li-nav-a" class="li-nav">Proyectos</li></a>
             <a href="#habilidades"><li id="li-nav-c" class="li-nav">Habilidades</li></a>
-            <a href="#contenedor"><li id="li-nav-b" onclick="contacto()" class="li-nav">Contactame</li></a>
+            <a href="#footer"><li id="li-nav-b" onclick="contacto()" class="li-nav">Contactame</li></a>
+            <li onclick="cambiarIdioma()"><i class="fa-sharp fa-solid fa-language fa-lg"></i></li>
         </ul>
     </nav>
     <div class="burger-cont">
@@ -25,6 +26,7 @@
             <a href="#proyectos"><li class="lu-burger">Proyectos</li></a>
             <a href="#habilidades"><li class="lu-burger">Habilidades</li></a>
             <a href="#contenedor"><li onclick="contacto()" class="lu-burger">Contactame</li></a>
+            <li onclick="cambiarIdioma()" ><i class="fa-sharp fa-solid fa-language"></i></li>
         </ul>
     </div>
     </div>
@@ -32,8 +34,12 @@
         
         <div id="presentacion" class="presentacion">
             <span class="mensaje"><span class="mensajeVar">Contactame por mi gmail: </span><span class="copy" onclick="copy()">📩</span></span>
-        <h2>Hola! soy <span class="title-second-color">Brian</span>, un <span class="title-second-color">desarollador web</span>
-       ex estudiante de <span class="title-second-color">Analisis en Sistemas</span>.</h2>
+            <h2 class="h2-presentacion">
+                <span id="saludo1">Hola! soy </span><span class="title-second-color">Brian</span>
+                <span id="saludo2">, un </span>
+                <span id="saludo3" class="title-second-color">desarrollador web</span>
+                <span id="saludo4"> ex estudiante de </span>
+                <span id="saludo5" class="title-second-color">Analisis en Sistemas</span>.</h2>
         </div>
         
     </header>
@@ -66,7 +72,7 @@
         </div>
         </div>
     </section>
-    <h3 class="h3" id="habilidades">Mis habilidades</h2>
+    <h3 class="h3 habilidadesH3" id="habilidades">Mis habilidades</h3>
     <section class="habilidades">
         <div class="card-habilidad" id="card-habilidad1"></div>
         <div class="card-habilidad" id="card-habilidad2"></div>
@@ -76,6 +82,13 @@
         <div class="card-habilidad" id="card-habilidad6"></div>
     </section>
     </div>
+    <footer id="footer" class="footer">
+        <ul>
+            <a href="https://github.com/Brajah9" target="_blank"><li id="GitHubFooter"><i class="fa-brands fa-github fa-xl"></i></li></a>
+            <a href="https://www.linkedin.com/in/braiann-ruiz-782176227/" target="_blank"><li id="LinkedinFooter"><i class="fa-brands fa-linkedin fa-xl"></i></li></a>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/5f9bbf120d.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

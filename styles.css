@@ -110,7 +110,7 @@ h2 {
 .mensaje-abierto {
     animation: abierto 1s;
     top: 15%;
-    right: 20%;
+    right: 5%;
     position: fixed;
     text-align: center;
     font-size: 1.5em;
@@ -348,7 +348,10 @@ h2 {
 }
 
 .h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
     text-align: center;
 }
@@ -491,4 +494,32 @@ h2 {
     .nav li {
         display: none;
     }
+}
+
+.footer {
+    background: #394867;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+}
+
+.footer li {
+    line-height: 0px;
+}
+
+.footer a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-xl {
+    color: #9BA4B5;
 }
