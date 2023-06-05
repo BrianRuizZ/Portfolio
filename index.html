@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Ruiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcun icon" href="habilidades-img/9.png" />
+    
+</head>
+<body>
+    <div id="contenedor">
+    <nav class="nav">
+        <ul class="ul-nav">
+            <a href="#proyectos"><li id="li-nav-a" class="li-nav">Proyectos</li></a>
+            <a href="#habilidades"><li id="li-nav-c" class="li-nav">Habilidades</li></a>
+            <a href="#contenedor"><li id="li-nav-b" onclick="contacto()" class="li-nav">Contactame</li></a>
+        </ul>
+    </nav>
+    <div class="burger-cont">
+    <div class="burger-menu" onclick="menuActivo()"><i class="menu"></i></div>
+    <div class="burger-m">  
+        <ul class="ul-burger">
+            <a href="#proyectos"><li class="lu-burger">Proyectos</li></a>
+            <a href="#habilidades"><li class="lu-burger">Habilidades</li></a>
+            <a href="#contenedor"><li onclick="contacto()" class="lu-burger">Contactame</li></a>
+        </ul>
+    </div>
+    </div>
+    <header class="header">
+        
+        <div id="presentacion" class="presentacion">
+            <span class="mensaje"><span class="mensajeVar">Contactame por mi gmail: </span><span class="copy" onclick="copy()">📩</span></span>
+        <h2>Hola! soy <span class="title-second-color">Brian</span>, un <span class="title-second-color">desarollador web</span>
+        en busca de mi primer trabajo como programador.</h2>
+        </div>
+    </header>
+    <a href="#proyectos"><div class="flecha-cont"><div class="flecha"></div></div></a>
+    <section id="proyectos" class="proyectos">
+        <div class="card-cont">
+        <div id="card1" class="card">
+            <a target="_BLANK" href="https://brajah9.github.io/tictactoe/"><button class="botonVerPagina">Ver pagina</button></a>
+            <a target="_BLANK" href="https://github.com/Brajah9/tictactoe"><button class="botonVerCodigo">Ver codigo</button></a>
+        </div>
+        <div id="card2" class="card">
+            <a target="_BLANK" href="https://brajah9.github.io/ListaDeTareas/"><button class="botonVerPagina">Ver pagina</button></a>
+            <a target="_BLANK" href="https://github.com/Brajah9/ListaDeTareas"><button class="botonVerCodigo">Ver codigo</button></a>
+        </div>
+        <div id="card3" class="card">
+            <a target="_BLANK" href="https://brajah9.github.io/App-Clima/"><button class="botonVerPagina">Ver pagina</button></a>
+            <a target="_BLANK" href="https://github.com/Brajah9/App-Clima"><button class="botonVerCodigo">Ver codigo</button></a>
+        </div>
+        <div id="card4" class="card">
+            <a target="_BLANK" href="https://brajah9.github.io/Juego-de-memoria/"><button class="botonVerPagina">Ver pagina</button></a>
+            <a target="_BLANK" href="https://github.com/Brajah9/Juego-de-memoria"><button class="botonVerCodigo">Ver codigo</button></a>
+        </div>
+        <div id="card5" class="card">
+            <a target="_BLANK" href="https://brajah9.github.io/Calculadora/"><button class="botonVerPagina">Ver pagina</button></a>
+            <a target="_BLANK" href="https://github.com/Brajah9/Calculadora"><button class="botonVerCodigo">Ver codigo</button></a>
+        </div>
+        <div id="card6" class="card">
+            <a target="_BLANK" href="https://brajah9.github.io/Dado/"><button class="botonVerPagina">Ver pagina</button></a>
+            <a target="_BLANK" href="https://github.com/Brajah9/Dado"><button class="botonVerCodigo">Ver codigo</button></a>
+        </div>
+        </div>
+    </section>
+    <h3 class="h3" id="habilidades">Mis habilidades</h2>
+    <section class="habilidades">
+        <div class="card-habilidad" id="card-habilidad1"></div>
+        <div class="card-habilidad" id="card-habilidad2"></div>
+        <div class="card-habilidad" id="card-habilidad3"></div>
+        <div class="card-habilidad" id="card-habilidad4"></div>
+        <div class="card-habilidad" id="card-habilidad5"></div>
+        <div class="card-habilidad" id="card-habilidad6"></div>
+    </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
