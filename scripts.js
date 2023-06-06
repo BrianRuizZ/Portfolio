@@ -14,6 +14,10 @@ let liNavA = document.getElementById('li-nav-a');
 let liNavB = document.getElementById('li-nav-b');
 let liNavC = document.getElementById('li-nav-c');
 
+let luBurgerA = document.getElementById('lu-burgerA');
+let luBurgerB = document.getElementById('lu-burgerB');
+let luBurgerC = document.getElementById('lu-burgerC');
+
 // constantes
 
 const burgerMenu = document.querySelector('.burger-m');
@@ -64,6 +68,9 @@ function cambiarIdioma() {
                 botonVerPagina[i].textContent = 'View page';
             }
             idioma = 'en';
+            luBurgerA.textContent = 'PROJECTS';
+            luBurgerB.textContent = 'SKILLS';
+            luBurgerC.textContent = 'CONTACT ME';
             liNavA.textContent = 'Projects';
             liNavC.textContent = 'Skills';
             liNavB.textContent = 'Contact me';
@@ -81,10 +88,13 @@ function cambiarIdioma() {
 
     if (saludo1.textContent == "Hi! i'm " ) {
         for (let i = 0; i < botonVerCodigo.length; i++) {
-            botonVerCodigo[i].textContent = 'Ver pagina';
-            botonVerPagina[i].textContent = 'Ver codigo';
+            botonVerCodigo[i].textContent = 'Ver codigo';
+            botonVerPagina[i].textContent = 'Ver pagina';
         }
             idioma = 'es';
+            luBurgerA.textContent = 'PROYECTOS';
+            luBurgerB.textContent = 'HABILIDADES';
+            luBurgerC.textContent = 'CONTACTO';
             liNavA.textContent = 'Proyectos';
             liNavC.textContent = 'Habilidades';
             liNavB.textContent = 'Contactame';
