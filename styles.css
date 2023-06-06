@@ -559,3 +559,7 @@ h2 {
 .fa-xl {
     color: #9BA4B5;
 }
+
+.fa-xl:hover{
+    color: rgba(120, 129, 146, 0.9);
+}
