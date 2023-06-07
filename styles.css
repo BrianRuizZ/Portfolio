@@ -369,11 +369,13 @@ h2 {
 }
 
 .h3 {
+    text-transform: uppercase;
     text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
     margin-top: 70px;
     margin-bottom: 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
+    color: #212A3E;
     text-align: center;
 }
 
