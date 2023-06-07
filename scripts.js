@@ -6,6 +6,7 @@ let mensajeVar = document.querySelector('.mensajeVar');
 let idioma = 'es';
 
 let habilidadesH3 = document.getElementById('habilidades');
+let proyectosH3 = document.getElementById('proyectosH3')
 
 let botonVerPagina = document.getElementsByClassName('botonVerPagina');
 let botonVerCodigo = document.getElementsByClassName('botonVerCodigo');
@@ -75,7 +76,7 @@ function cambiarIdioma() {
 
     // Traduccion al Ingles
 
-    if (saludo1.textContent == 'Hola! soy ') {
+    if (saludo1.textContent == 'Bienvenido, soy ') {
             for (let i = 0; i < botonVerCodigo.length; i++) {
                 botonVerCodigo[i].textContent = 'View code';
                 botonVerPagina[i].textContent = 'View page';
@@ -88,11 +89,12 @@ function cambiarIdioma() {
             liNavC.textContent = 'Skills';
             liNavB.textContent = 'Contact me';
             saludo1.textContent = "Hi! i'm ";
-            saludo2.textContent = ', a ';
+            saludo2.textContent = ',a ';
             saludo3.textContent = 'web developer';
             saludo4.textContent = ' and former student of ';
             saludo5.textContent = 'Systems Analysis';
             habilidadesH3.textContent = 'My skills';
+            proyectosH3.textContent = 'My Projects';
             mensajeVar.textContent = "Contact me via gmail: ";
             return;
     }
@@ -111,12 +113,13 @@ function cambiarIdioma() {
             liNavA.textContent = 'Proyectos';
             liNavC.textContent = 'Habilidades';
             liNavB.textContent = 'Contactame';
-            saludo1.textContent = "Hola! soy ";
-            saludo2.textContent = ', un ';
+            saludo1.textContent = "Bienvenido, soy ";
+            saludo2.textContent = ',un ';
             saludo3.textContent = 'desarrollador web';
             saludo4.textContent = ' y ex estudiante de ';
             saludo5.textContent = 'Analista en Sistemas';
             habilidadesH3.textContent = 'Mis habilidades';
+            proyectosH3.textContent = 'Mis Proyectos';
             mensajeVar.textContent = "Contactame via gmail: ";
             return;
         }

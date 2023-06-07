@@ -52,7 +52,7 @@ nav a {
 }
 
 .presentacion {
-    margin: 32vh auto;
+    margin: 30vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,9 +87,9 @@ h2 {
     position: relative;
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 33px solid #394867;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 35px solid #394867;
     animation: next 1s infinite;
     transition: all 0.3s;
 }
@@ -158,8 +158,7 @@ h2 {
 }
 
 .proyectos {
-    margin-top: 50px;
-
+    
 }
 
 .card-cont {
@@ -257,29 +256,29 @@ h2 {
 .menu::before {
     content: "";
     position: absolute;
-    border-radius: 20px;
+    border-radius: 5px;
     top: 20px;
     background: rgba(57, 72, 103);
-    width: 40px;
-    height: 5px;
+    width: 45px;
+    height: 6px;
 }
 
 .menu {
     display: none;
     background: rgba(57, 72, 103);
-    width: 40px;
-    height: 5px;
-    border-radius: 20px;
+    width: 45px;
+    height: 6px;
+    border-radius: 5px;
 }
 
 .menu::after {
     content: "";
     position: absolute;
-    border-radius: 20px;
+    border-radius: 5px;
     top: 0px;
     background: rgba(57, 72, 103);
-    width: 40px;
-    height: 5px;
+    width: 45px;
+    height: 6px;
 }
 
 
@@ -366,6 +365,17 @@ h2 {
     display: grid;
     grid-template-rows: 10px 1fr 1fr 10px;
     grid-template-columns: 1fr 170px 170px 170px 170px 1fr;
+}
+
+.proyectosH3 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
+    margin-top: 170px;
+    margin-bottom: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: #212A3E;
+    text-align: center;
 }
 
 .h3 {
