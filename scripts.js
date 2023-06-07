@@ -29,6 +29,13 @@ const saludo4 = document.getElementById('saludo4');
 const saludo5 = document.getElementById('saludo5');
 
 function contacto() {
+
+    mensaje.classList.toggle('mensaje')
+    mensaje.classList.toggle('mensaje-abierto')
+    burgerMenu.classList.remove('burger-activo')
+}
+
+function cerrar() {
     mensaje.classList.toggle('mensaje')
     mensaje.classList.toggle('mensaje-abierto')
 }
@@ -48,7 +55,13 @@ function copy() {
     setTimeout(()=> {
         mensaje.classList.toggle('mensaje');
         mensaje.classList.toggle('mensaje-abierto');
-    },1000);
+        if (idioma == 'es') {
+            mensajeVar.textContent = "Contactame via gmail: ";
+        }
+        else if (idioma == 'en') {
+            mensajeVar.textContent = "Contact me via gmail: ";
+        }
+    },500);
 }
 
 
@@ -104,7 +117,7 @@ function cambiarIdioma() {
             saludo4.textContent = ' y ex estudiante de ';
             saludo5.textContent = 'Analista en Sistemas';
             habilidadesH3.textContent = 'Mis habilidades';
-            mensajeVar.textContent = "Contactame por mi gmail: ";
+            mensajeVar.textContent = "Contactame via gmail: ";
             return;
         }
 }
