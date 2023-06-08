@@ -183,7 +183,8 @@ h2 {
 
 #card1 {
     background-image: url(./proyectos-img/tictactoe.PNG);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 2/2;
     grid-row: 2;
@@ -191,7 +192,8 @@ h2 {
 
 #card2 {
     background-image: url(./proyectos-img/listaDeTareas.PNG);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 4/4;
     grid-row: 2;
@@ -199,7 +201,8 @@ h2 {
 
 #card3 {
     background-image: url(./proyectos-img/climaApi.PNG);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 2/2;
     grid-row: 3;
@@ -207,7 +210,8 @@ h2 {
 
 #card4 {
     background-image: url(./proyectos-img/juegoDeMemoria.PNG);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 4/4;
     grid-row: 3;
@@ -215,7 +219,8 @@ h2 {
 
 #card5 {
     background-image: url(./proyectos-img/calculadora.PNG);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 2/2;
     grid-row: 4;
@@ -223,7 +228,8 @@ h2 {
 
 #card6 {
     background-image: url(./proyectos-img/dado.PNG);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 4/4;
     grid-row: 4;
@@ -231,7 +237,8 @@ h2 {
 
 #card7 {
     background-image: url(./proyectos-img/GeneradorDeContraseñas.png);
-    background-size: 100%;
+    background-size: 125%;
+    background-position: 50%;
     background-repeat: no-repeat;
     grid-column: 4/4;
     grid-row: 5;
@@ -560,6 +567,17 @@ h2 {
 
     .nav li {
         display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7 {
+        background-size: 135%;
+        background-position: 50%;
+    }
+
+    .card {
+        margin-top: 2vh;
     }
 }
 
