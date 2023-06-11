@@ -53,6 +53,9 @@ nav a {
     
 }
 
+/**/
+
+
 /* Presentacion */
 
 .presentacion {
@@ -381,7 +384,7 @@ h2 {
     text-transform: uppercase;
     text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
     margin-top: 170px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
     color: #212A3E;
@@ -394,24 +397,23 @@ h2 {
     gap: 20px;
     display: grid;
     grid-template-rows: 10px 1fr 1fr 10px;
-    grid-template-columns:1fr 160px 160px 160px 160px 160px 160px 1fr;
+    grid-template-columns: 0.5fr repeat(6, 120px) 0.5fr;
 }
 
 .h3 {
     text-transform: uppercase;
     text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
-    margin-top: 90px;
-    margin-bottom: 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
     color: #212A3E;
     text-align: center;
+    margin: 50px auto;
 }
 
 .card-habilidad {
     border-radius: 10px;
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     background: rgb(207, 207, 207);
 }
 
@@ -531,7 +533,7 @@ h2 {
 
 /* Responsive */ 
 
-@media (max-width: 770px) {
+@media (max-width: 855px) {
 
     h2 {
         font-size: 1.8em;
@@ -607,6 +609,12 @@ h2 {
         grid-template-columns: 0.6fr 160px 0.6fr;
         grid-template-rows: 10px repeat(10, 1fr) 10px;
     }
+
+    .card-habilidad {
+        width: 160px;
+        height: 160px;
+    }
+
     #card-habilidad1 {
         grid-row: 2/2;
         grid-column: 2/2;
