@@ -166,110 +166,53 @@ h2 {
 /* Proyectos */
 
 .card-cont {
+    padding: 15px;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.2fr 2fr 0.5fr;
-    grid-template-rows: 5px 1fr 1fr 1fr 1fr 5px;
-    gap: 15px;
+    grid-template-columns:repeat(
+        auto-fit, minmax(350px, 1fr));
+    gap: 25px;
 }
 
 .card {
-    border: 1px solid;
-    padding-bottom: 10px;
-    background: #394867;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items:end;
     text-align: center;
-    height: 50vh;
-    gap: 6px;
 }
 
-#card1 {
-    background-image: url(./proyectos-img/tictactoe.PNG);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 2/2;
-    grid-row: 2;
-}
-
-#card2 {
-    background-image: url(./proyectos-img/listaDeTareas.PNG);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 4/4;
-    grid-row: 2;
-}
-
-#card3 {
-    background-image: url(./proyectos-img/climaApi.PNG);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 2/2;
-    grid-row: 3;
-}
-
-#card4 {
-    background-image: url(./proyectos-img/juegoDeMemoria.PNG);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 4/4;
-    grid-row: 3;
-}
-
-#card5 {
-    background-image: url(./proyectos-img/calculadora.PNG);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 2/2;
-    grid-row: 4;
-}
-
-#card6 {
-    background-image: url(./proyectos-img/dado.PNG);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 4/4;
-    grid-row: 4;
-}
-
-#card7 {
-    background-image: url(./proyectos-img/GeneradorDeContraseñas.png);
-    background-size: 125%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    grid-column: 4/4;
-    grid-row: 5;
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #212A3E;
 }
 
 .botonVerPagina {
+    font-weight: 800;
+    font-size: 1.1em;
+    font-family: monospace;
     text-transform: uppercase;
-    background:#394867;
+    background:none;
     padding: 10px;
     border-radius: 20px;
-    border: 1px #212A3E solid;
-    color: rgb(214, 214, 214);
+    border: 2px #212A3E solid;
+    color: #212A3E;
 }
 
 .botonVerCodigo {
+    font-weight: 800;
+    font-size: 1.1em;
+    font-family: monospace;
     text-transform: uppercase;
-    background: #394867;
+    background: none;
     padding: 10px;
     border-radius: 20px;
-    border: 1px #212A3E solid;
-    color: rgb(214, 214, 214);
+    border: 2px #212A3E solid;
+    color: #212A3E;
 
 }
 
 :is(.botonVerCodigo:hover, .botonVerPagina:hover) {
     cursor: pointer;
     background: #212A3E;
+    color: #9BA4B5;
 }
 
 .menu::before {
@@ -381,108 +324,38 @@ h2 {
 
 .proyectosH3 {
     text-transform: uppercase;
-    text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
+
     margin-top: 170px;
     margin-bottom: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
-    color: #212A3E;
+    color: #111111;
     text-align: center;
 }
 
 /* Cartas de mis habilidades */
 
-.habilidades {
-    gap: 20px;
-    display: grid;
-    grid-template-rows: 10px 1fr 1fr 10px;
-    grid-template-columns: 0.5fr repeat(6, 120px) 0.5fr;
-}
-
 .h3 {
     text-transform: uppercase;
-    text-shadow: 2px 2px 6px rgb(33, 42, 62,0.5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
-    color: #212A3E;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #111111;
     text-align: center;
-    margin: 50px auto;
 }
 
-.card-habilidad {
-    border-radius: 10px;
-    width: 120px;
-    height: 120px;
-    background: rgb(207, 207, 207);
+.habilidades {
+    margin: 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
 }
 
-#card-habilidad1 {
-    background-image: url(habilidades-img/JS.png);
-    background-size: 100%;
-    grid-column: 3/3;
-    grid-row: 2/2;
-}
-
-#card-habilidad2 {
-    background-image: url(habilidades-img/React.png);
-    background-size: 100%;
-    grid-column: 4/4;
-    grid-row: 2/2;
-}
-
-#card-habilidad3 {
-    background-image: url(habilidades-img/HTML.png);
-    background-size: 100%;
-    grid-column: 4/4;
-    grid-row: 3/3;
-}
-
-#card-habilidad4 {
-    background-image: url(habilidades-img/CSS.png);
-    background-size: 100%;
-    grid-column: 3/3;
-    grid-row: 3/3;
-}
-
-#card-habilidad5 {
-    background-image: url(habilidades-img/MongoDB.png);
-    background-size: 100%;
-    grid-column: 6/6;
-    grid-row: 2/2;
-}
-
-#card-habilidad6 {
-    background-image: url(habilidades-img/MySQL.png);
-    background-size: 100%;
-    grid-column: 5/5;
-    grid-row: 3/3;
-}
-
-#card-habilidad7 {
-    background-image: url(habilidades-img/Django.png);
-    background-size: 100%;
-    grid-column: 7/7;
-    grid-row: 3/3;
-}
-
-#card-habilidad8 {
-    background-image: url(habilidades-img/Git.png);
-    background-size: 100%;
-    grid-column: 5/5;
-    grid-row: 2/2;
-}
-#card-habilidad9 {
-    background-image: url(habilidades-img/Python.png);
-    background-size: 100%;
-    grid-column: 2/2;
-    grid-row: 3/3;
-}
-
-#card-habilidad10 {
-    background-image: url(habilidades-img/Node.png);
-    background-size: 100%;
-    grid-column: 6/6;
-    grid-row: 3/3;
+.card-habilidad img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
 }
 
 /* Footer */
@@ -535,7 +408,7 @@ h2 {
 @media (max-width: 855px) {
 
     h2 {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     .idioma {
@@ -551,115 +424,8 @@ h2 {
         margin: 28vh auto;
     }
 
-    .card {
-        margin-top: 8vh;
-        background-size: 50%;
-    }
-
-    #card1 {
-        background-size: 100%;
-        grid-column: 2/2;
-        grid-row: 2;
-    }
-    #card2 {
-        background-size: 100%;
-        grid-column: 2/2;
-        grid-row: 3;
-    }
-    #card3 {
-        background-size: 100%;
-        grid-column: 2/2;
-        grid-row: 4;
-    }
-    #card4 {
-        background-size: 100%;
-        grid-column: 2/2;
-        grid-row: 5;
-    }
-    #card5 {
-        background-size: 100%;
-        grid-column: 2/2;
-        grid-row: 6;
-    }
-    #card6 {
-        background-size: 100%;
-        background-repeat: no-repeat;
-        grid-column: 2/2;
-        grid-row: 7;
-    }
-
-    #card7 {
-        background-size: 100%;
-        background-repeat: no-repeat;
-        grid-column: 2/2;
-        grid-row: 8;
-    }
-
-    .card-cont {
-        grid-template-columns: 0.2fr 2fr 0.2fr;
-        grid-template-rows: 2px repeat(7, 1fr) 2px;
-    }
-
     .burger-activo {
         display: inline-block;
-    }
-
-    .habilidades {
-        grid-template-columns: 0.6fr 160px 0.6fr;
-        grid-template-rows: 10px repeat(10, 1fr) 10px;
-    }
-
-    .card-habilidad {
-        width: 160px;
-        height: 160px;
-    }
-
-    #card-habilidad1 {
-        grid-row: 2/2;
-        grid-column: 2/2;
-    }
-
-    #card-habilidad2 {
-        grid-row: 3/3;
-        grid-column: 2/2;
-    }
-
-    #card-habilidad3 {
-        grid-row: 4/4;
-        grid-column: 2/2;
-    }
-
-    #card-habilidad4 {
-        grid-row: 5/5;
-        grid-column: 2/2;
-    }
-
-    #card-habilidad5 {
-        grid-row: 6/6;
-        grid-column: 2/2;
-    }
-    #card-habilidad6 {
-        grid-row: 7/7;
-        grid-column: 2/2;
-    }
-    #card-habilidad7 {
-        grid-row: 8/8;
-        grid-column: 2/2;
-    }
-    #card-habilidad8 {
-        grid-row: 9/9;
-        grid-column: 2/2;
-    }
-    #card-habilidad9 {
-        grid-row: 10/10;
-        grid-column: 2/2;
-    }
-    #card-habilidad10 {
-        grid-row: 11/11;
-        grid-column: 2/2;
-    }
-    .card {
-        height: 31vh;
     }
 
     .menu {
@@ -668,16 +434,5 @@ h2 {
 
     .nav li {
         display: none;
-    }
-}
-
-@media (max-width: 570px) {
-    #card1, #card2, #card3, #card4, #card5, #card6, #card7 {
-        background-size: 135%;
-        background-position: 50%;
-    }
-
-    .card {
-        margin-top: 2vh;
     }
 }
