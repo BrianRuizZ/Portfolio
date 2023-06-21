@@ -83,17 +83,17 @@ function cambiarIdioma() {
             }
             idioma = 'en';
             luBurgerA.textContent = 'PROJECTS';
-            luBurgerB.textContent = 'SKILLS';
+            luBurgerB.textContent = 'TECHNOLOGIES';
             luBurgerC.textContent = 'CONTACT ME';
             liNavA.textContent = 'Projects';
-            liNavC.textContent = 'Skills';
+            liNavC.textContent = 'Technologies';
             liNavB.textContent = 'Contact me';
             saludo1.textContent = "Hi! i'm ";
             saludo2.textContent = ',a ';
             saludo3.textContent = 'web developer';
             saludo4.textContent = ' and former student of ';
             saludo5.textContent = 'Systems Analysis';
-            habilidadesH3.textContent = 'My skills';
+            habilidadesH3.textContent = 'Technologies';
             proyectosH3.textContent = 'My Projects';
             mensajeVar.textContent = "Contact me via gmail: ";
             return;
@@ -108,17 +108,17 @@ function cambiarIdioma() {
         }
             idioma = 'es';
             luBurgerA.textContent = 'PROYECTOS';
-            luBurgerB.textContent = 'HABILIDADES';
+            luBurgerB.textContent = 'TECNOLOGIAS';
             luBurgerC.textContent = 'CONTACTO';
             liNavA.textContent = 'Proyectos';
-            liNavC.textContent = 'Habilidades';
+            liNavC.textContent = 'Tecnologias';
             liNavB.textContent = 'Contactame';
             saludo1.textContent = "Bienvenido, soy ";
             saludo2.textContent = ',un ';
             saludo3.textContent = 'desarrollador web';
             saludo4.textContent = ' y ex estudiante de ';
             saludo5.textContent = 'Analista en Sistemas';
-            habilidadesH3.textContent = 'Mis habilidades';
+            habilidadesH3.textContent = 'Tecnologias';
             proyectosH3.textContent = 'Mis Proyectos';
             mensajeVar.textContent = "Contactame via gmail: ";
             return;
